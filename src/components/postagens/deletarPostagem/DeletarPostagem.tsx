@@ -14,7 +14,7 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            alert("Jaeger, você precisa estar conectado ao fluxo")
             history.push("/login")
     
         }

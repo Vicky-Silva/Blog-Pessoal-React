@@ -7,6 +7,7 @@ import { useHistory } from 'react-router';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Home() {
 
@@ -17,7 +18,16 @@ function Home() {
     
     useEffect(() => {
       if (token == "") {
-          alert("Você precisa estar logado")
+        toast.error('Jaeger, você precisa estar conectado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
           history.push("/login")
   
       }
@@ -40,7 +50,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                    <img src="https://i.imgur.com/bNmM8Yf.jpg" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
