@@ -1,9 +1,6 @@
-.textos1{
-    font-weight: bold !important;
- }
- 
- .imagem{
-     background-image: url(https://i.imgur.com/wJNewke.jpg);
+.imagem{
+     background-image: url(https://i.imgur.com/h12Xv1Z.jpg);
+     background-size: 100% 100%;
      background-repeat: no-repeat;
      width: 100vh;
      min-height: 100vh;
@@ -11,6 +8,47 @@
      background-position: center;
  }
  
- .text-decorator-none{
-     text-decoration: none;
+ .imagem2{
+    background-color: black;
+    background-repeat: no-repeat;
+    /* width: 100vh; */
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
  }
+ 
+ .textsLog{
+    color:white;
+}
+
+.textLogin{
+    font-weight: bold !important;
+    color:white !important; 
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.textLogin input, label{
+    color:white!important;
+}
+
+fieldset {
+    border-color:white !important;
+}
+.botaoEntrar{
+    color:white!important;
+}
+
+.fundo{
+    background-color: black;
+}
+
+.botaoCadastro{
+    color: teal;
+}
+
+.button{
+    background-color: green;
+}
